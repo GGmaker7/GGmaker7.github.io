@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RubleUP</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>RubleUP</h1>
+        <div id="usercard"></div> <!-- Блок для отображения информации о пользователе -->
         <div id="counter">0</div>
         <img src="coin.png" alt="Монета" id="coin" onclick="incrementCounter()">
+        <button id="sendDataButton" class="button">Отправить данные в бот</button> <!-- Кнопка для отправки данных -->
     </div>
     <script src="script.js"></script>
 </body>
