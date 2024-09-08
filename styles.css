@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ff9800 30%, #ffcc80 100%); /* Оранжевый градиент */
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(255, 152, 0, 0.2); /* Оранжевая тень */
+    padding: 40px;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    color: #ff5722; /* Темно-оранжевый цвет */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#counter {
+    font-size: 3em;
+    margin: 20px 0;
+    color: #ff9800; /* Ярко-оранжевый цвет */
+    font-weight: bold;
+}
+
+#coin {
+    width: 150px;
+    height: 150px; /* Установите высоту равной ширине для круглой формы */
+    border-radius: 50%; /* Делаем изображение круглым */
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#coin:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(255, 152, 0, 0.5); /* Оранжевая тень при наведении */
+}
