@@ -4,7 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(135deg, #ff9800 30%, #ffcc80 100%); /* Оранжевый градиент */
+    background: linear-gradient(135deg, #ff9800 30%, #ffcc80 100%);
     font-family: 'Arial', sans-serif;
 }
 
@@ -12,7 +12,7 @@ body {
     text-align: center;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0 8px 30px rgba(255, 152, 0, 0.2); /* Оранжевая тень */
+    box-shadow: 0 8px 30px rgba(255, 152, 0, 0.2);
     padding: 40px;
     transition: transform 0.3s;
 }
@@ -22,27 +22,45 @@ body {
 }
 
 h1 {
-    color: #ff5722; /* Темно-оранжевый цвет */
+    color: #ff5722;
     font-size: 2.5em;
     margin-bottom: 20px;
+}
+
+.side-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.left, .right {
+    flex: 1;
+    text-align: center;
+}
+
+.icon {
+    width: 50px; /* Установите размер иконок */
+    height: 50px;
 }
 
 #counter {
     font-size: 3em;
     margin: 20px 0;
-    color: #ff9800; /* Ярко-оранжевый цвет */
+    color: #ff9800;
     font-weight: bold;
 }
 
 #coin {
     width: 150px;
-    height: 150px; /* Установите высоту равной ширине для круглой формы */
-    border-radius: 50%; /* Делаем изображение круглым */
+    height: 150px;
+    border-radius: 50%;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
+    touch-action: manipulation; /* Предотвращает масштабирование */
 }
 
 #coin:hover {
     transform: scale(1.1);
-    box-shadow: 0 4px 20px rgba(255, 152, 0, 0.5); /* Оранжевая тень при наведении */
+    box-shadow: 0 4px 20px rgba(255, 152, 0, 0.5);
 }
